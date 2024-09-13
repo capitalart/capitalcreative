@@ -21,8 +21,23 @@
 
     <script src="js/darkmode.js"></script>
     <script>
-        document.getElementById("header").innerHTML = fetch('partials/header.html').then(response => response.text());
-        document.getElementById("footer").innerHTML = fetch('partials/footer.html').then(response => response.text());
+        // Fetch the header and append it to the header div
+        fetch('partials/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+            .catch(error => console.log("Error fetching header:", error));
+    
+        // Fetch the footer and append it to the footer div
+        fetch('partials/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            })
+            .catch(error => console.log("Error fetching footer:", error));
     </script>
+    juice
 </body>
+
 </html>
