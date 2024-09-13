@@ -39,14 +39,19 @@ button.toggle-theme {
     right: 1rem;
     background: none;
     border: none;
-    font-size: 1.5rem;
     cursor: pointer;
-    display: inline-block; /* Ensure the button is displayed */
+    display: inline-block;
+    width: 40px; /* Adjust the size of the button */
+    height: 40px;
 }
 
 button.toggle-theme img {
-    width: 24px;
+    width: 24px; /* Ensure the icon inside the button is properly sized */
     height: 24px;
+}
+
+button.toggle-theme {
+    border: 1px solid red; /* Temporary border to check visibility */
 }
 
 button.toggle-theme.bottom {
