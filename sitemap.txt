@@ -1,0 +1,18 @@
+.
+├── CNAME
+├── about.html
+├── contact.html
+├── css
+│   └── style.css
+├── icons
+│   ├── moon.svg
+│   └── sun.svg
+├── index.html
+├── js
+│   └── darkmode.js
+├── partials
+│   ├── footer.html
+│   └── header.html
+└── sitemap.txt
+
+5 directories, 11 files

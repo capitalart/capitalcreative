@@ -41,6 +41,7 @@ button.toggle-theme {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    display: inline-block; /* Ensure the button is displayed */
 }
 
 button.toggle-theme img {
