@@ -1,4 +1,4 @@
-
+/* General styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: var(--bg-color);
@@ -7,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Color variables */
 :root {
     --bg-color: white;
     --text-color: black;
@@ -17,14 +18,11 @@ body {
     --text-color: #ffffff;
 }
 
+/* Container styling */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-h1, h2, h3, p {
-    margin-bottom: 1rem;
 }
 
 header, footer {
@@ -32,22 +30,22 @@ header, footer {
     color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
-    position: sticky;
-    top: 0;
 }
 
-footer {
-    bottom: 0;
-}
-
+/* Toggle button */
 button.toggle-theme {
     position: fixed;
     top: 1rem;
     right: 1rem;
     background: none;
-    border: 1px solid var(--text-color);
-    padding: 0.5rem;
+    border: none;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+button.toggle-theme img {
+    width: 24px;
+    height: 24px;
 }
 
 button.toggle-theme.bottom {
