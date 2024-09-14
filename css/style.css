@@ -1,69 +1,42 @@
-/* General styling */
+/* Default light theme */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color: #e6e6e6; /* 10% black */
+    color: #333333; /* 80% black */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Color variables */
-:root {
-    --bg-color: white;
-    --text-color: black;
-}
-
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-}
-
-/* Container styling */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
+/* Common styling */
 header, footer {
-    background-color: var(--bg-color);
-    color: var(--text-color);
     text-align: center;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
-/* Toggle button */
+nav {
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
 button.toggle-theme {
-    position: fixed;
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    position: absolute;
     top: 1rem;
     right: 1rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    width: 40px; /* Adjust the size of the button */
-    height: 40px;
 }
 
-button.toggle-theme img {
-    width: 24px; /* Ensure the icon inside the button is properly sized */
-    height: 24px;
+footer {
+    margin-top: 2rem;
 }
 
-button.toggle-theme {
-    border: 1px solid red; /* Temporary border to check visibility */
-}
-
-button.toggle-theme.bottom {
-    top: auto;
-    bottom: 1rem;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+/* Dark theme */
+body[data-theme="dark"] {
+    background-color: #999999; /* 60% black */
+    color: #ffffff; /* White */
 }
